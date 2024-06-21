@@ -185,7 +185,13 @@
 		<row>
 			<c>
 				<c>
-					<f>2</f>
+					<f>3</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Новое в версии 1.0.6.2</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 		</row>
@@ -196,6 +202,12 @@
 			<c>
 				<c>
 					<f>2</f>
+					<tfl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>- Реализована возможность создания документа "&lt;b&gt;Произвольная операция по счетам&lt;/&gt;" на основании документа "&lt;b&gt;Долг&lt;/&gt;" для возможности ввода операции выдачи/получения денег в долг по счету.</v8:content>
+						</v8:item>
+					</tfl>
 				</c>
 			</c>
 		</row>
@@ -2225,6 +2237,16 @@
 		</area>
 	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
+		<name>Версия1_0_6_2</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>13</beginRow>
+			<endRow>13</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
 		<name>Отступ</name>
 		<area>
 			<type>Rows</type>
@@ -2260,6 +2282,16 @@
 			<type>Rows</type>
 			<beginRow>9</beginRow>
 			<endRow>9</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>Шапка1_0_6_2</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>12</beginRow>
+			<endRow>12</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>

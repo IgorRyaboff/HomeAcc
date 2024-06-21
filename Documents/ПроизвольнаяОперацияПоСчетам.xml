@@ -101,6 +101,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
+						<v8:Type>cfg:DocumentRef.Долг</v8:Type>
 						<v8:Type>cfg:DocumentRef.ПогашениеДолга</v8:Type>
 						<v8:Type>cfg:DocumentRef.Расход</v8:Type>
 						<v8:Type>cfg:DocumentRef.ОтменаРасхода</v8:Type>
