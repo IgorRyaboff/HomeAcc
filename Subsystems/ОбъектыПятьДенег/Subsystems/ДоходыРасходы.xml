@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Subsystem uuid="e7629d13-34cc-436a-a4cf-631c166eff23">
+		<Properties>
+			<Name>ДоходыРасходы</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доходы расходы</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДоходыРасходы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДоходыРасходыСлужебныйВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДоходыРасходыСлужебныйКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОценкаЛишнихРасходовКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.QRКод16</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.РазделДоходыРасходы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.КатегорияРасходовДляНовыхСтатейРасходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.КатегорииРасходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СтатьиДоходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СтатьиРасходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Счета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ВводНачальныхОстатковНаСчетах</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Доход</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ОтменаРасхода</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ОценкаЛишнихРасходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПереводМеждуСчетами</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПроизвольнаяОперацияПоСчетам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.Расход</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DocumentJournal.ВсеДокументыДоходовРасходов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.Доходы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ЛишниеРасходы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ВедомостьПоСчетам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.Расходы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.Доходы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ЛишниеРасходы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ОстаткиНаСчетах</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.Расходы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ПанельОтчетовДоходыРасходы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СервисЗаполненияРасходовИзЧеков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОстаткиНаСчетах</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.СервисЗаполненияРасходовИзЧеков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.НастройкиСервисаЗаполненияРасходовИзЧеков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.СервисЗаполненияРасходовИзЧеков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИсключатьСтрокиСНулевойСуммойПриЗагрузкеРасходовИзЧека</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

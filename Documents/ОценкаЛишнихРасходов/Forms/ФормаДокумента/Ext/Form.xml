@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаДатаНомер" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата и номер</v8:content>
+				</v8:item>
+			</Title>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДатаНомерРасширеннаяПодсказка" id="36"/>
+			<ChildItems>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаМесяц" id="76">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Месяц</v8:content>
+				</v8:item>
+			</Title>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаМесяцРасширеннаяПодсказка" id="77"/>
+			<ChildItems>
+				<InputField name="Месяц" id="7">
+					<DataPath>Объект.Месяц</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="МесяцКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="МесяцРасширеннаяПодсказка" id="9"/>
+					<Events>
+						<Event name="OnChange">МесяцПриИзменении</Event>
+					</Events>
+				</InputField>
+				<LabelDecoration name="НадписьПредварительныйРасчет" id="78">
+					<TextColor>style:SpecialTextColor</TextColor>
+					<Font ref="style:ВажнаяНадписьШрифт" kind="StyleItem"/>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это предварительный расчет</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTipRepresentation>Button</ToolTipRepresentation>
+					<ContextMenu name="НадписьПредварительныйРасчетКонтекстноеМеню" id="79"/>
+					<ExtendedTooltip name="НадписьПредварительныйРасчетРасширеннаяПодсказка" id="80">
+						<Title formatted="true">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Таблица расходов в документе заполнена в момент, когда в списке &lt;link e1cib/list/РегистрСведений.ДатыПроверокБалансовСчетов&gt;дат проверок балансов счетов&lt;/&gt; были записи с датой проверки меньшей, чем начало указанного месяца.
+Для окончательного расчета необходимо установить даты проверок счетов выше даты начала указанного месяца и перезаполнить документ.
+Если вы уверены, что после последнего заполнения документа не было лишних расходов, вы можете &lt;link УбратьПризнак&gt;убрать признак предварительного расчета&lt;/&gt; без перезаполнения документа.</v8:content>
+							</v8:item>
+						</Title>
+						<Events>
+							<Event name="URLProcessing">НадписьПредварительныйРасчетРасширеннаяПодсказкаОбработкаНавигационнойСсылки</Event>
+						</Events>
+					</ExtendedTooltip>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ЛишниеРасходы" id="37">
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ЛишниеРасходы</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ЛишниеРасходыКонтекстноеМеню" id="38"/>
+			<AutoCommandBar name="ЛишниеРасходыКоманднаяПанель" id="39">
+				<ChildItems>
+					<Button name="ЛишниеРасходыЗаполнитьЛишниеРасходы" id="65">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаполнитьЛишниеРасходы</CommandName>
+						<ExtendedTooltip name="ЛишниеРасходыЗаполнитьЛишниеРасходыРасширеннаяПодсказка" id="66"/>
+					</Button>
+					<ButtonGroup name="ЛишниеРасходыГруппаПометка" id="70">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Установка/снятие пометок</v8:content>
+							</v8:item>
+						</Title>
+						<Representation>Compact</Representation>
+						<ExtendedTooltip name="ЛишниеРасходыГруппаПометкаРасширеннаяПодсказка" id="71"/>
+						<ChildItems>
+							<Button name="ЛишниеРасходыУстановитьПометкиЛишниеРасходы" id="72">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.УстановитьПометкиЛишниеРасходы</CommandName>
+								<ExtendedTooltip name="ЛишниеРасходыУстановитьПометкиЛишниеРасходыРасширеннаяПодсказка" id="73"/>
+							</Button>
+							<Button name="ЛишниеРасходыСнятьПометкиЛишниеРасходы" id="74">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.СнятьПометкиЛишниеРасходы</CommandName>
+								<ExtendedTooltip name="ЛишниеРасходыСнятьПометкиЛишниеРасходыРасширеннаяПодсказка" id="75"/>
+							</Button>
+						</ChildItems>
+					</ButtonGroup>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ЛишниеРасходыРасширеннаяПодсказка" id="40"/>
+			<SearchStringAddition name="ЛишниеРасходыСтрокаПоиска" id="41">
+				<AdditionSource>
+					<Item>ЛишниеРасходы</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЛишниеРасходыСтрокаПоискаКонтекстноеМеню" id="42"/>
+				<ExtendedTooltip name="ЛишниеРасходыСтрокаПоискаРасширеннаяПодсказка" id="43"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ЛишниеРасходыСостояниеПросмотра" id="44">
+				<AdditionSource>
+					<Item>ЛишниеРасходы</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЛишниеРасходыСостояниеПросмотраКонтекстноеМеню" id="45"/>
+				<ExtendedTooltip name="ЛишниеРасходыСостояниеПросмотраРасширеннаяПодсказка" id="46"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ЛишниеРасходыУправлениеПоиском" id="47">
+				<AdditionSource>
+					<Item>ЛишниеРасходы</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ЛишниеРасходыУправлениеПоискомКонтекстноеМеню" id="48"/>
+				<ExtendedTooltip name="ЛишниеРасходыУправлениеПоискомРасширеннаяПодсказка" id="49"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnChange">ЛишниеРасходыПриИзменении</Event>
+			</Events>
+			<ChildItems>
+				<CheckBoxField name="ЛишниеРасходыПометка" id="50">
+					<DataPath>Объект.ЛишниеРасходы.Пометка</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЛишниеРасходыПометкаКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ЛишниеРасходыПометкаРасширеннаяПодсказка" id="52"/>
+				</CheckBoxField>
+				<InputField name="ЛишниеРасходыКатегорияРасходов" id="53">
+					<DataPath>Объект.ЛишниеРасходы.КатегорияРасходов</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЛишниеРасходыКатегорияРасходовКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ЛишниеРасходыКатегорияРасходовРасширеннаяПодсказка" id="55"/>
+				</InputField>
+				<InputField name="ЛишниеРасходыСтатьяРасходов" id="56">
+					<DataPath>Объект.ЛишниеРасходы.СтатьяРасходов</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЛишниеРасходыСтатьяРасходовКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="ЛишниеРасходыСтатьяРасходовРасширеннаяПодсказка" id="58"/>
+				</InputField>
+				<InputField name="ЛишниеРасходыНоменклатура" id="59">
+					<DataPath>Объект.ЛишниеРасходы.Номенклатура</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЛишниеРасходыНоменклатураКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="ЛишниеРасходыНоменклатураРасширеннаяПодсказка" id="61"/>
+				</InputField>
+				<InputField name="ЛишниеРасходыСумма" id="62">
+					<DataPath>Объект.ЛишниеРасходы.Сумма</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЛишниеРасходыСуммаКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="ЛишниеРасходыСуммаРасширеннаяПодсказка" id="64"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="ГруппаПодвал" id="81">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подвал</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПодвалРасширеннаяПодсказка" id="82"/>
+			<ChildItems>
+				<InputField name="Комментарий" id="86">
+					<DataPath>Объект.Комментарий</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="88"/>
+				</InputField>
+				<InputField name="Ответственный" id="83">
+					<DataPath>Объект.Ответственный</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ОтветственныйКонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="ОтветственныйРасширеннаяПодсказка" id="85"/>
+				</InputField>
+				<InputField name="СуммаДокумента" id="67">
+					<DataPath>Объект.СуммаДокумента</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СуммаДокументаКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="СуммаДокументаРасширеннаяПодсказка" id="69"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ОценкаЛишнихРасходов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьЛишниеРасходы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить лишние расходы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьЛишниеРасходы</Action>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="УстановитьПометкиЛишниеРасходы" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить пометки</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.CheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УстановитьПометкиЛишниеРасходы</Action>
+		</Command>
+		<Command name="СнятьПометкиЛишниеРасходы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять пометки</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СнятьПометкиЛишниеРасходы</Action>
+		</Command>
+	</Commands>
+</Form>

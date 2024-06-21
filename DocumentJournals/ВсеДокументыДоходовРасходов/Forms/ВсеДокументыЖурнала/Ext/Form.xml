@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<LabelDecoration name="ГиперссылкаДоходы" id="1">
+			<Title formatted="true">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt;link e1cib/list/Документ.Доход&gt;Доходы&lt;/&gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+			<ContextMenu name="ГиперссылкаДоходыКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ГиперссылкаДоходыРасширеннаяПодсказка" id="3">
+				<Title formatted="false">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Фиксируют приход средств в вашу финансовую систему из внешних источников</v8:content>
+					</v8:item>
+				</Title>
+			</ExtendedTooltip>
+		</LabelDecoration>
+		<LabelDecoration name="ГиперссылкаОтменыРасходов" id="4">
+			<Title formatted="true">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt;link e1cib/list/Документ.ОтменаРасхода&gt;Отмены расходов&lt;/&gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+			<ContextMenu name="ГиперссылкаОтменыРасходовКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ГиперссылкаОтменыРасходовРасширеннаяПодсказка" id="6">
+				<Title formatted="false">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Фиксируют отмену ранее введенного расхода</v8:content>
+					</v8:item>
+				</Title>
+			</ExtendedTooltip>
+		</LabelDecoration>
+		<LabelDecoration name="ГиперссылкаПереводыМеждуСчетами" id="7">
+			<Title formatted="true">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt;link e1cib/list/Документ.ПереводМеждуСчетами&gt;Переводы между счетами&lt;/&gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+			<ContextMenu name="ГиперссылкаПереводыМеждуСчетамиКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ГиперссылкаПереводыМеждуСчетамиРасширеннаяПодсказка" id="9">
+				<Title formatted="false">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Фиксируют перевод средств между вашими счетами</v8:content>
+					</v8:item>
+				</Title>
+			</ExtendedTooltip>
+		</LabelDecoration>
+		<LabelDecoration name="ГиперссылкаПроизвольныеОперацииПоСчетам" id="10">
+			<Title formatted="true">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt;link e1cib/list/Документ.ПроизвольнаяОперацияПоСчетам&gt;Произвольные операции по счетам&lt;/&gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+			<ContextMenu name="ГиперссылкаПроизвольныеОперацииПоСчетамКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ГиперссылкаПроизвольныеОперацииПоСчетамРасширеннаяПодсказка" id="12">
+				<Title formatted="false">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Фиксируют только движения остатков на счетах (без аналитических регистров)</v8:content>
+					</v8:item>
+				</Title>
+			</ExtendedTooltip>
+		</LabelDecoration>
+		<LabelDecoration name="ГиперссылкаРасходы" id="13">
+			<Title formatted="true">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>&lt;link e1cib/list/Документ.Расход&gt;Расходы&lt;/&gt;</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+			<ContextMenu name="ГиперссылкаРасходыКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ГиперссылкаРасходыРасширеннаяПодсказка" id="15">
+				<Title formatted="false">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Фиксируют расход ваших финансов</v8:content>
+					</v8:item>
+				</Title>
+			</ExtendedTooltip>
+		</LabelDecoration>
+	</ChildItems>
+	<Attributes/>
+</Form>
