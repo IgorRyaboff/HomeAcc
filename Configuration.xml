@@ -53,7 +53,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>Рябов Игорь</Vendor>
-			<Version>1.0.5.2</Version>
+			<Version>1.0.6.1</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
@@ -266,6 +266,7 @@
 			<Language>Русский</Language>
 			<Subsystem>Администрирование</Subsystem>
 			<Subsystem>Аналитики</Subsystem>
+			<Subsystem>Долги</Subsystem>
 			<Subsystem>ДоходыРасходы</Subsystem>
 			<Subsystem>ОбъектыПятьДенег</Subsystem>
 			<Subsystem>ПодключаемыеОтчетыИОбработки</Subsystem>
@@ -620,6 +621,7 @@
 			<CommonPicture>РазделАдминистрирование</CommonPicture>
 			<CommonPicture>РазделАдминистрирование48</CommonPicture>
 			<CommonPicture>РазделАналитики</CommonPicture>
+			<CommonPicture>РазделДолги</CommonPicture>
 			<CommonPicture>РазделДоходыРасходы</CommonPicture>
 			<CommonPicture>РазорватьСоединение</CommonPicture>
 			<CommonPicture>РазрешитьРедактированиеРеквизитовОбъекта</CommonPicture>
@@ -910,6 +912,7 @@
 			<CommonModule>ДлительныеОперации</CommonModule>
 			<CommonModule>ДлительныеОперацииВызовСервера</CommonModule>
 			<CommonModule>ДлительныеОперацииКлиент</CommonModule>
+			<CommonModule>Долги</CommonModule>
 			<CommonModule>ДополнительныеОтчетыИОбработки</CommonModule>
 			<CommonModule>ДополнительныеОтчетыИОбработкиВБезопасномРежимеСлужебный</CommonModule>
 			<CommonModule>ДополнительныеОтчетыИОбработкиВызовСервера</CommonModule>
@@ -1348,6 +1351,7 @@
 			<CommonCommand>ОтправитьПисьмо</CommonCommand>
 			<CommonCommand>ПанельОтчетовАдминистрирование</CommonCommand>
 			<CommonCommand>ПанельОтчетовАналитики</CommonCommand>
+			<CommonCommand>ПанельОтчетовДолги</CommonCommand>
 			<CommonCommand>ПанельОтчетовДоходыРасходы</CommonCommand>
 			<CommonCommand>ПерсональнаяНастройкаПроксиСервера</CommonCommand>
 			<CommonCommand>ПоказатьРезультатРезервногоКопирования</CommonCommand>
@@ -1562,10 +1566,12 @@
 			<Catalog>ШаблоныСообщений</Catalog>
 			<Catalog>ШаблоныСообщенийПрисоединенныеФайлы</Catalog>
 			<Document>ВводНачальныхОстатковНаСчетах</Document>
+			<Document>Долг</Document>
 			<Document>Доход</Document>
 			<Document>ОтменаРасхода</Document>
 			<Document>ОценкаЛишнихРасходов</Document>
 			<Document>ПереводМеждуСчетами</Document>
+			<Document>ПогашениеДолга</Document>
 			<Document>ПроизвольнаяОперацияПоСчетам</Document>
 			<Document>Расход</Document>
 			<Document>РучноеДвижениеПоАналитике</Document>
@@ -1577,6 +1583,7 @@
 			<Enum>ВариантыПредставленияПериода</Enum>
 			<Enum>ВариантыПубликацииДополнительныхОтчетовИОбработок</Enum>
 			<Enum>ВариантыСжатияTIFF</Enum>
+			<Enum>ВидыДолгов</Enum>
 			<Enum>ВидыДополнительныхОтчетовИОбработок</Enum>
 			<Enum>ВидыНазначенияДатЗапрета</Enum>
 			<Enum>ВидыСвойств</Enum>
@@ -1624,6 +1631,7 @@
 			<Report>ДатыЗапретаИзменения</Report>
 			<Report>ДвиженияДокумента</Report>
 			<Report>ДлительностьОтложенногоОбновления</Report>
+			<Report>Долги</Report>
 			<Report>Доходы</Report>
 			<Report>ИзменениеУчастниковГруппПользователей</Report>
 			<Report>ИзменениеУчетныхЗаписей</Report>
@@ -1752,8 +1760,10 @@
 			<InformationRegister>УдаляемыеОбъекты</InformationRegister>
 			<InformationRegister>ФайлыВРабочемКаталоге</InformationRegister>
 			<InformationRegister>ФиксацияОбработкиДанныхОбработчиками</InformationRegister>
+			<InformationRegister>ХарактеристикиДолгов</InformationRegister>
 			<InformationRegister>ХранилищеФайлов</InformationRegister>
 			<AccumulationRegister>Аналитики</AccumulationRegister>
+			<AccumulationRegister>Долги</AccumulationRegister>
 			<AccumulationRegister>Доходы</AccumulationRegister>
 			<AccumulationRegister>ЛишниеРасходы</AccumulationRegister>
 			<AccumulationRegister>ОстаткиНаСчетах</AccumulationRegister>

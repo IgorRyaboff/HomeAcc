@@ -66,6 +66,7 @@
 			<SequenceFilling>AutoFill</SequenceFilling>
 			<RegisterRecords>
 				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ОстаткиНаСчетах</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.Долги</xr:Item>
 			</RegisterRecords>
 			<PostInPrivilegedMode>true</PostInPrivilegedMode>
 			<UnpostInPrivilegedMode>true</UnpostInPrivilegedMode>
@@ -100,9 +101,11 @@
 					</Synonym>
 					<Comment/>
 					<Type>
+						<v8:Type>cfg:DocumentRef.ПогашениеДолга</v8:Type>
 						<v8:Type>cfg:DocumentRef.Расход</v8:Type>
 						<v8:Type>cfg:DocumentRef.ОтменаРасхода</v8:Type>
 						<v8:Type>cfg:DocumentRef.ПроизвольнаяОперацияПоСчетам</v8:Type>
+						<v8:Type>cfg:DocumentRef.Доход</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

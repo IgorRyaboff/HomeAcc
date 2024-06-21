@@ -130,7 +130,6 @@
 		</UsualGroup>
 		<Table name="Расходы" id="13">
 			<Representation>List</Representation>
-			<UseAlternationRowColor>true</UseAlternationRowColor>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>

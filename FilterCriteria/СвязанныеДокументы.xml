@@ -21,6 +21,8 @@
 			</Synonym>
 			<Comment/>
 			<Type>
+				<v8:Type>cfg:DocumentRef.Долг</v8:Type>
+				<v8:Type>cfg:DocumentRef.ПогашениеДолга</v8:Type>
 				<v8:Type>cfg:DocumentRef.Расход</v8:Type>
 				<v8:Type>cfg:DocumentRef.ОтменаРасхода</v8:Type>
 				<v8:Type>cfg:DocumentRef.ПроизвольнаяОперацияПоСчетам</v8:Type>
@@ -29,6 +31,7 @@
 			<UseStandardCommands>false</UseStandardCommands>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ОтменаРасхода.Attribute.ДокументОснование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПогашениеДолга.Attribute.Долг</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ПроизвольнаяОперацияПоСчетам.Attribute.ДокументОснование</xr:Item>
 			</Content>
 			<DefaultForm/>
