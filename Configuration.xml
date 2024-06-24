@@ -265,6 +265,7 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Subsystem>Администрирование</Subsystem>
+			<Subsystem>АдминистрированиеПятьДенег</Subsystem>
 			<Subsystem>Аналитики</Subsystem>
 			<Subsystem>Долги</Subsystem>
 			<Subsystem>ДоходыРасходы</Subsystem>
