@@ -17,11 +17,28 @@
 			</Synonym>
 			<Comment/>
 			<Type>
+				<v8:Type>cfg:DocumentRef.Долг</v8:Type>
+				<v8:Type>cfg:CatalogRef.ЕдиницыИзмерения</v8:Type>
+				<v8:Type>cfg:CatalogRef.Счета</v8:Type>
+				<v8:Type>cfg:DocumentRef.ОценкаЛишнихРасходов</v8:Type>
+				<v8:Type>cfg:DocumentRef.РучноеДвижениеПоАналитике</v8:Type>
+				<v8:Type>cfg:DocumentRef.ПогашениеДолга</v8:Type>
 				<v8:Type>cfg:CatalogRef.ПапкиФайлов</v8:Type>
 				<v8:Type>cfg:CatalogRef.ВнешниеПользователи</v8:Type>
+				<v8:Type>cfg:CatalogRef.СтатьиАналитики</v8:Type>
+				<v8:Type>cfg:DocumentRef.Расход</v8:Type>
 				<v8:Type>cfg:CatalogRef.Файлы</v8:Type>
+				<v8:Type>cfg:DocumentRef.ВводНачальныхОстатковНаСчетах</v8:Type>
+				<v8:Type>cfg:DocumentRef.ОтменаРасхода</v8:Type>
+				<v8:Type>cfg:CatalogRef.КатегорииРасходов</v8:Type>
+				<v8:Type>cfg:DocumentRef.ПереводМеждуСчетами</v8:Type>
+				<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
 				<v8:Type>cfg:CatalogRef.ДополнительныеОтчетыИОбработки</v8:Type>
+				<v8:Type>cfg:DocumentRef.ПроизвольнаяОперацияПоСчетам</v8:Type>
+				<v8:Type>cfg:CatalogRef.СтатьиДоходов</v8:Type>
 				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+				<v8:Type>cfg:DocumentRef.Доход</v8:Type>
+				<v8:Type>cfg:CatalogRef.СтатьиРасходов</v8:Type>
 			</Type>
 		</Properties>
 	</DefinedType>
