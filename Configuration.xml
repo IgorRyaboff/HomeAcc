@@ -39,7 +39,7 @@
 					<v8:content>Пять денег, редакция 1.0</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment/>
+			<Comment>№ релиза - целых часов с 01.01.2024 + целых десятков минут в часе</Comment>
 			<NamePrefix/>
 			<ConfigurationExtensionCompatibilityMode>Version8_3_25</ConfigurationExtensionCompatibilityMode>
 			<DefaultRunMode>ManagedApplication</DefaultRunMode>
@@ -53,7 +53,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</xr:Item>
 			</DefaultRoles>
 			<Vendor>Рябов Игорь</Vendor>
-			<Version>1.0.6.4</Version>
+			<Version>1.0.7.0</Version>
 			<UpdateCatalogAddress/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<UseManagedFormInOrdinaryApplication>true</UseManagedFormInOrdinaryApplication>
