@@ -6,10 +6,12 @@
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
 		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаНомерДата" id="29">
@@ -121,6 +123,18 @@
 			<ContextMenu name="СуммаДокументаКонтекстноеМеню" id="14"/>
 			<ExtendedTooltip name="СуммаДокументаРасширеннаяПодсказка" id="15"/>
 		</InputField>
+		<UsualGroup name="ГруппаДополнительныеРеквизиты" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные реквизиты</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДополнительныеРеквизитыРасширеннаяПодсказка" id="45"/>
+		</UsualGroup>
 		<UsualGroup name="ГруппаПодвал" id="39">
 			<Title>
 				<v8:item>
@@ -135,6 +149,7 @@
 			<ChildItems>
 				<InputField name="Комментарий" id="26">
 					<DataPath>Объект.Комментарий</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="КомментарийКонтекстноеМеню" id="27"/>
 					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="28"/>
