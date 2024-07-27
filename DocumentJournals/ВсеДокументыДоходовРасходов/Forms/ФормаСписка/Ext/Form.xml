@@ -172,16 +172,17 @@
 				</LabelField>
 			</ChildItems>
 		</Table>
-		<UsualGroup name="ГруппаСмТакже" id="68">
+		<UsualGroup name="ГруппаПодвал" id="68">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>См. также</v8:content>
+					<v8:content>Подвал</v8:content>
 				</v8:item>
 			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаСмТакжеРасширеннаяПодсказка" id="69"/>
+			<ExtendedTooltip name="ГруппаПодвалРасширеннаяПодсказка" id="69"/>
 			<ChildItems>
 				<LabelDecoration name="ДекорацияСмТакже" id="70">
 					<Title formatted="false">
@@ -204,6 +205,34 @@
 					</Title>
 					<ExtendedTooltip name="ОткрытьВсеДокументыЖурналаРасширеннаяПодсказка" id="74"/>
 				</Button>
+				<UsualGroup name="ГруппаОстатки" id="81">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остатки</v8:content>
+						</v8:item>
+					</Title>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаОстаткиРасширеннаяПодсказка" id="82"/>
+					<ChildItems>
+						<InputField name="ОстатокНаСчетеСписания" id="83">
+							<DataPath>ОстатокНаСчетеСписания</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ОстатокНаСчетеСписанияКонтекстноеМеню" id="84"/>
+							<ExtendedTooltip name="ОстатокНаСчетеСписанияРасширеннаяПодсказка" id="85"/>
+						</InputField>
+						<InputField name="ОстатокНаСчетеЗачисления" id="86">
+							<DataPath>ОстатокНаСчетеЗачисления</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ОстатокНаСчетеЗачисленияКонтекстноеМеню" id="87"/>
+							<ExtendedTooltip name="ОстатокНаСчетеЗачисленияРасширеннаяПодсказка" id="88"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>
@@ -325,6 +354,28 @@
 			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОстатокНаСчетеСписания" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток на счете списания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:DefinedType.ДенежнаяСуммаЛюбогоЗнака</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="ОстатокНаСчетеЗачисления" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток на счете зачисления</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:DefinedType.ДенежнаяСуммаЛюбогоЗнака</v8:TypeSet>
 			</Type>
 		</Attribute>
 	</Attributes>

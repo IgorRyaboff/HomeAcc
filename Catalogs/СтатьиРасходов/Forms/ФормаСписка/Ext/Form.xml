@@ -80,14 +80,6 @@
 				<Event name="OnActivateRow">СписокПриАктивизацииСтроки</Event>
 			</Events>
 			<ChildItems>
-				<LabelField name="Ссылка" id="22">
-					<DataPath>Список.Ref</DataPath>
-					<UserVisible>
-						<xr:Common>false</xr:Common>
-					</UserVisible>
-					<ContextMenu name="СсылкаКонтекстноеМеню" id="23"/>
-					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="24"/>
-				</LabelField>
 				<LabelField name="Наименование" id="16">
 					<DataPath>Список.Description</DataPath>
 					<DefaultItem>true</DefaultItem>
@@ -99,13 +91,13 @@
 					<ContextMenu name="КодКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="21"/>
 				</LabelField>
-				<LabelField name="Ссылка1" id="25">
+				<LabelField name="Ссылка" id="25">
 					<DataPath>Список.Ref</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
-					<ContextMenu name="Ссылка1КонтекстноеМеню" id="26"/>
-					<ExtendedTooltip name="Ссылка1РасширеннаяПодсказка" id="27"/>
+					<ContextMenu name="СсылкаКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="27"/>
 				</LabelField>
 			</ChildItems>
 		</Table>
